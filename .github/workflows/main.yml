@@ -19,17 +19,16 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd backend
           pip install -r requirements.txt
           pip install pyinstaller
 
       - name: Build EXE
         run: |
-          cd backend
-          pyinstaller --onefile --name ExcellenTech_TaxCalculator --add-data "../tax_slabs.json;." main.py
+          pyinstaller --onefile --name ExcellenTech_TaxCalculator --add-data "tax_slabs.json;." main.py
 
       - name: Upload EXE artifact
         uses: actions/upload-artifact@v4
         with:
           name: ExcellenTech_TaxCalculator
-          path: backend/dist/ExcellenTech_TaxCalculator.exe
+          path: dist/ExcellenTech_TaxCalculator.exe
+
