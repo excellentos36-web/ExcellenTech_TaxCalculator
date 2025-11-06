@@ -1,0 +1,91 @@
+{
+  "version": "2025-11-06",
+  "source": "Bundled sample: ExcellenTech Tax Calculator",
+  "car_slabs": [
+    {
+      "min": 0,
+      "max": 500000,
+      "rate": 0.13
+    },
+    {
+      "min": 500001,
+      "max": 1000000,
+      "rate": 0.14
+    },
+    {
+      "min": 1000001,
+      "max": 2000000,
+      "rate": 0.17
+    },
+    {
+      "min": 2000001,
+      "max": 999999999,
+      "rate": 0.18
+    }
+  ],
+  "two_wheeler_slabs": [
+    {
+      "min": 0,
+      "max": 50000,
+      "rate": 0.1
+    },
+    {
+      "min": 50001,
+      "max": 100000,
+      "rate": 0.12
+    },
+    {
+      "min": 100001,
+      "max": 999999999,
+      "rate": 0.18
+    }
+  ],
+  "commercial_slabs": [
+    {
+      "min": 0,
+      "max": 500000,
+      "rate": 0.13
+    },
+    {
+      "min": 500001,
+      "max": 1000000,
+      "rate": 0.14
+    },
+    {
+      "min": 1000001,
+      "max": 999999999,
+      "rate": 0.18
+    }
+  ],
+  "ev_special": {
+    "ev_discount_example": 0.5
+  },
+  "age_depreciation": [
+    {
+      "min_age": 0,
+      "max_age": 1,
+      "discount": 0.0
+    },
+    {
+      "min_age": 2,
+      "max_age": 3,
+      "discount": 0.2
+    },
+    {
+      "min_age": 4,
+      "max_age": 5,
+      "discount": 0.4
+    },
+    {
+      "min_age": 6,
+      "max_age": 999,
+      "discount": 0.6
+    }
+  ],
+  "fixed_charges": {
+    "registration_fee": 1000,
+    "smart_card": 200,
+    "road_safety_cess": 300,
+    "admin_charges": 500
+  }
+}
